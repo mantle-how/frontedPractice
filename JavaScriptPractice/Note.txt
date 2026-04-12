@@ -1,0 +1,55 @@
+JavaScript 通常會寫在<body> 中 的最後 ， 會用<script>標籤包起來
+
+JS註解為 // , /* */
+
+js中有兩個表示空的概念
+1. undefined 表示真的全空
+2. null 有東西 但那個東西叫空
+
+變數的運作流程 :
+1. 宣告變數
+2. 使用變數
+
+宣告變數語法 => let 變數名稱
+
+程式範例 => let x  ,   let name
+
+
+
+指定變數中的資料 let 變數名稱 = 資料
+
+宣告過的變數名稱 = 資料
+
+程式範例
+
+let x;
+console.log(x) #印出undefine
+
+x=5
+console.log(x) #印出5
+
+x= "Hello"
+console.log(x); #印出 Hello
+
+
+常數 constant => 不能夠更動資料中的值 ， 稱為常數
+常數宣告語法
+const 常數名稱 = 資料
+
+程式範例 :
+const x=3
+
+x=100 #會報錯
+
+
+
+
+
+
+
+
+
+
+
+
+
