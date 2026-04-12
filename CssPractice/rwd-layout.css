@@ -1,0 +1,56 @@
+.headline{
+    font-size: 30px; font-weight: bold;
+    margin-bottom: 15px; text-align: center;
+}
+
+/*電腦版先顯示 手機板先隱藏*/
+.desktop-menu{
+    text-align: center;
+    display: block;
+}
+.mobile-menu{
+    text-align: center;
+    display: none;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    flex: none; width : 280px; margin: 10px;
+    background-color: #ffcccc;
+}
+/*有相同的就覆蓋 有不同的就沿用*/
+@media (max-width: 1250px) {
+    /*寬度小於1250px , 套用這個區塊的css*/
+    .list{
+        flex-wrap: wrap; /*讓裡面項目有機會往下掉*/
+    }
+    .product{
+        width: 45%; /*90% 一排剛好可以排兩個*/
+    }
+
+}
+
+/*有相同的就覆蓋 有不同的就沿用*/
+@media (max-width: 500px) {
+    /*寬度小於500px , 套用這個區塊的css*/
+    .headline{
+        font-size: 20px;
+    }
+    /*電腦版先隱藏 手機板先顯示*/
+    .desktop-menu{
+        text-align: center;
+        display: none;
+    }
+    .mobile-menu{
+        text-align: center;
+        display: block;
+    }
+    .product{
+        width: 90%/*90% 一排剛好可以排兩個*/
+    }
+
+}
