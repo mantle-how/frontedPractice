@@ -1,0 +1,24 @@
+/* 將css 檔案獨立開來 */
+
+/*標籤名稱選擇器*/
+body{background-color:#cccccc} /*套用在body標籤中*/
+/* id選擇器 使用# */
+#title-1 {text-decoration: line-through}
+/* class 選擇器 使用. */
+.title {
+    margin-bottom: 10px ; /*設定與下方元素的距離*/
+    margin-top: 10px ; /*設定與上方元素的距離*/
+    font-weight: bold ;
+    font-size: 24px
+}
+
+.content {
+    width: 400px ;
+    padding: 10px ;
+    border:1px dashed blue ;
+    color: #444444
+}
+.keyword
+{
+    color: blue
+}
