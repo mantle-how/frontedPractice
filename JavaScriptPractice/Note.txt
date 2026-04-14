@@ -70,6 +70,87 @@ function 函式名稱 (參數名稱列表){
 }
 
 
+物件 Object 用來封裝其他資料的容器
+
+物件的使用流程 :
+
+建立物件 -> 使用物件
+
+建立物件:
+從一個空白的物件開始
+new Object()
+
+let obj = new Object();
+
+建立物件成員 : (把資料放進物件裡面)
+物件.成員名稱 = 資料
+
+程式碼範例 :
+let obj = Object();
+obj.x = 3;
+obj.y = 4;
+
+函式也可以是物件中的成員
+
+let obj = new Object();
+obj.x = 3;
+obj.y = 4;
+obj.show = function(){
+    console.log("Hello");
+};
+
+
+物件成員的種類:
+物件的成員分成屬性以及方法兩中稱呼
+
+let obj = new Object();
+obj.x = 3; //成員非函式 稱為屬性
+obj.y = 4; //成員非函式 稱為屬性
+obj.show = function(){  //成員是函式 ， 成為方法
+    console.log("Hello");
+};
+
+
+使用物件:
+可以透過.存取物件的成員
+物件.成員名稱
+
+程式碼範例:
+
+let obj = new Object();
+obj.x = 3;
+obj.y = 4;
+obj.show = function(){
+    console.log("Hello");
+};
+console.log(obj); // 他會把整個物件都印出來
+console.log(obj.x + obj.y);
+obj.show();
+
+使用 this 關鍵字 : (在物件的方法中使用this代表物件本身)
+
+let obj = new Object();
+obj.x = 3;
+obj.y = 4;
+obj.show = function(){
+    console.log(this.x , this.y);  //this.x = 3 ,this.y = 4
+};
+
+json 物件表示法建立物件的簡單解法  (JavaScript Object Notation)
+
+建立物件和物件的成員
+{成員名稱 : 資料 , 成員名稱 : 資料}
+
+程式範例:
+let obj1 = {}
+let obj2 = {
+    x:3,
+    x:4,
+    show:function(){
+        console.log("Hello")
+    }
+}
+
 
 
 
