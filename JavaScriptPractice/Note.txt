@@ -207,6 +207,45 @@ let arr = [3,4];
 arr.push(0);
 
 
+HTML DOM:
+
+根據 HTML 標籤， 建立物件結構
+
+每個 HTML 標籤在JS 引擎中都有對應的標籤物件
+
+把 HTML 標籤物件， 串接在一起， 成為物件結構 就是HTML DOM
+
+全名是 (Document Object Model)
+
+
+瀏覽器如何管立 繪製html 網頁 :
+html -> html dom in js -> 網頁畫面
+
+
+
+操作window物件 : window物件是html dom 的入口
+
+隨時可以用內建的window變數取得 console.log(window)
+
+
+操作window物件 : 內建的screen 物件記錄使用者的螢幕資訊
+
+screen 物件是window物件的一個屬性 :  windows.screen
+
+
+
+操作document物件: 內建的document物件代表網頁主畫面
+
+document物件是window物件的一個屬性 : window.document 可簡寫成document
+
+
+
+
+
+
+
+
+
 
 
 
